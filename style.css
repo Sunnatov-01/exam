@@ -16,6 +16,7 @@
     src: url('./Fonts/DMSans-Bold.ttf') format('truetype');
 }
 
+
 body{
     background-color: #191919;
 }
@@ -54,6 +55,10 @@ a{
 
 a:hover{
     color: #118DA8;
+}
+
+.bars{
+    display: none;
 }
 
 .main{
@@ -698,4 +703,42 @@ ul{
 
 .f-logos{
     margin-right: 17px;
+}
+
+
+
+
+
+
+
+@media ( max-width: 447px ){
+    .ul{
+        display: none;
+    }
+
+    .bars{
+        display: flex;
+        color: white;
+    }
+
+    .bars:hover ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-comment{
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .card-comment, .card-comment-1, .card-comment-2, .card-comment-3, .card-comment-4, .card-comment-5, .card-comment-6{
+        width: 400px;
+        height: 250px;
+    }
+    .p-comment-1{
+        font-size: 20px;
+        line-height: 22px;
+    }
 }
