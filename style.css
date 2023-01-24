@@ -714,16 +714,26 @@ ul{
 @media ( max-width: 447px ){
     .ul{
         display: none;
+        gap: 0px;
+        position: absolute;
     }
 
     .bars{
         display: flex;
         color: white;
     }
+    .bars:hover{
+        color: #118DA8;
+    }
 
     .bars:hover .ul{
-        display: flex;
+        display: block;
+        /* display: flex; */
         flex-direction: column;
+        transition: all 1s linear;
+        cursor: pointer;
+        background-color: #666a71;
+        border-radius: 3px;
     }
 
     .section-comment{
